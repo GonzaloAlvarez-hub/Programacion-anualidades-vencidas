@@ -27,7 +27,7 @@ ANLDnperiodosConVF=function(VF,A,r){
 
 
 #Tasa del periodo, conociendo valor futuro, número de pagos y monto de la anualidad.
-#Usaremos a formula creada por el profesor la cual adjunto con el siguiente link
+#Usaremos a formula creada por el profesor. Es importante cargar la funcion y despues cargar el source con el link, esto para que se cargen todas las funciones
 
 ANLDtasaPeriodoConVF=function(VF,A,Tpers){
 source("https://www.dropbox.com/s/s1nv2dypd2z0f3e/funcionesRMateFin.R?raw=1")
@@ -61,6 +61,8 @@ ANLDnperiodosConVA=function(VA,A,r){
 }
 
 #Tasa del periodo, conociendo valor actual, número de pagos y monto de la anualidad.
+#Usaremos a formula creada por el profesor. Es importante cargar la funcion y despues cargar el source con el link, esto para que se cargen todas las funciones
+
 ANLDtasaPeriodoConVA=function(VA,A,Tpers){
   source("https://www.dropbox.com/s/s1nv2dypd2z0f3e/funcionesRMateFin.R?raw=1")
   r=tasaAnualidadVencidaVA(VA,A,Tpers,umbral=10*(10^-17))
